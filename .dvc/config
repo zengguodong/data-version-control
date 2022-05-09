@@ -1,4 +1,6 @@
 [core]
-    remote = myremote
+    remote = storage
 ['remote "myremote"']
-    url = azure://mycontainer/object
+    url = azure://6sideinsepctions/dataversiontest
+['remote "storage"']
+    url = gdrive://1ML6exIlODDV_BU-zhW3oRKO9VMAcPNNf
