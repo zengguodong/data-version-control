@@ -12,8 +12,8 @@ stages:
       size: 1271
     outs:
     - path: data/prepared/test.csv
-      md5: e79818d6f3c716a343054d994e13f147
-      size: 17
+      md5: 03b902a0c3fca01af05fe5bf9c8390e0
+      size: 260113
     - path: data/prepared/train.csv
       md5: 03b902a0c3fca01af05fe5bf9c8390e0
       size: 260113
@@ -24,22 +24,22 @@ stages:
       md5: 03b902a0c3fca01af05fe5bf9c8390e0
       size: 260113
     - path: src/train.py
-      md5: ad34e87f4d781a9d01979df26ca69fca
+      md5: fba02db450a577e4eef0ce583a5dca3e
       size: 1372
     outs:
     - path: model/model.joblib
-      md5: 41e3e78202d8b069a5fc4ca3a21a852f
-      size: 241075
+      md5: 6b95ab13f94fd7fb7a749400372f846f
+      size: 2327249
   evaluate:
     cmd: python src/evaluate.py
     deps:
     - path: model/model.joblib
-      md5: 41e3e78202d8b069a5fc4ca3a21a852f
-      size: 241075
+      md5: 6b95ab13f94fd7fb7a749400372f846f
+      size: 2327249
     - path: src/evaluate.py
       md5: b197277667d6269271fff4ae4af8a941
       size: 668
     outs:
     - path: metrics/accuracy.json
-      md5: a85fa0cdb122ce77e462967e45a5cb09
-      size: 18
+      md5: 9a0379eaa11dd7b9e9995a62a5f21656
+      size: 17
